@@ -1,0 +1,61 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Labov1972}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Labov}{L.}%
+     {William}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {University of Pennsylvania Press}%
+  }
+  \strng{namehash}{LW1}
+  \strng{fullhash}{LW1}
+  \field{sortinit}{L}
+  \field{title}{Sociolinguistic Patterns}
+  \list{location}{1}{%
+    {Philadelphia}%
+  }
+  \field{year}{1972}
+\endentry
+
+\entry{Saussure1995}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Saussure}{S.}%
+     {Ferdinand}{F.}%
+     {de}{d.}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Payot}%
+  }
+  \strng{namehash}{SFd1}
+  \strng{fullhash}{SFd1}
+  \field{sortinit}{S}
+  \field{title}{Cours de Linguistique G{\'e}n{\'e}rale}
+  \field{year}{1995}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

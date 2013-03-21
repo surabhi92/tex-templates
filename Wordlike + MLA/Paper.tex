@@ -1,0 +1,44 @@
+\PassOptionsToPackage{margin=1in}{geometry}
+\documentclass[12pt]{article}
+\usepackage[american]{babel} 
+\usepackage{csquotes} 
+\usepackage[autocite=footnote,style=mla]{biblatex}
+\bibliography{research}
+\usepackage{wordlike}
+\usepackage{setspace}
+\usepackage{anyfontsize}
+\newcommand{\dg}{$^\circ$ } 
+
+
+\begin{document}
+
+\begin{flushright}
+Brian Jacobel\\
+Class, Prof\\
+Date
+\end{flushright}
+
+\begin{center}
+\underline{Title}\newline
+\end{center}
+
+\DeclareAutoCiteCommand{footnote}[f]{\footcite}{\footcites}
+
+\textit{``Quote."}\autocite{}.
+\begin{flushright}
+- Author, Date
+\end{flushright}
+
+\begin{doublespace}
+\fontsize{12.27}{16.4}\selectfont
+
+
+
+\pagebreak
+\renewcommand\refname{\normalsize\underline{Works Cited}}
+\printbibliography
+
+
+\end{doublespace}
+
+\end{document}

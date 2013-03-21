@@ -1,0 +1,67 @@
+\PassOptionsToPackage{margin=1in}{geometry}
+\documentclass[12pt]{article}
+\usepackage[nopar]{lipsum} % for dummy text
+\usepackage[american]{babel}
+\usepackage[babel]{csquotes}
+\usepackage[notes,natbib,isbn=false]{biblatex-chicago}  
+\usepackage{wordlike}
+\usepackage{setspace}
+\usepackage{anyfontsize}
+\newcommand{\dg}{$^\circ$ } 
+
+\begin{filecontents}{\jobname.bib}
+@book{Saussure1995,
+    Author = {Ferdinand de Saussure},
+    Origyear = {1916},
+    Publisher = {Payot},
+    Title = {Cours de Linguistique G{\'e}n{\'e}rale},
+    Year = {1995}}
+
+@book{Labov1972,
+    Address = {Philadelphia},
+    Author = {William Labov},
+    Publisher = {University of Pennsylvania Press},
+    Title = {Sociolinguistic Patterns},
+    Year = {1972}}
+
+\end{filecontents}
+\addbibresource{\jobname.bib}
+
+\begin{document}
+
+\begin{flushright}
+Brian Jacobel\\
+Russia's 20th Century\\
+Prof. Herrlinger\\
+Mar. 3, 2013
+\end{flushright}
+
+\begin{center}
+\underline{Title}\newline
+\end{center}
+
+\DeclareAutoCiteCommand{footnote}[f]{\footcite}{\footcites}
+
+%\textit{``Quote."}\autocite{}.
+%\begin{flushright}
+%- Author, Date
+%\end{flushright}
+
+\begin{doublespace}
+\fontsize{12.27}{16.4}\selectfont
+
+
+\lipsum[1]\autocite{Saussure1995}
+
+\lipsum[2]\autocite{Labov1972}
+
+
+
+%\pagebreak
+%\renewcommand\refname{\normalsize\underline{Works Cited}}
+%\printbibliography
+
+
+\end{doublespace}
+
+\end{document}
